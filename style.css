@@ -15,6 +15,16 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 
 .clear {clear: both;}
 
+a:link {
+color: #37B0B0;
+}
+a:visited {
+color: #7337B0;
+}
+a:hover {
+color: #74B037;
+}
+
 p {
 	font-size: 1em;
 	line-height: 1.4em;
