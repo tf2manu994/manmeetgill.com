@@ -1,6 +1,3 @@
----
-permalink: /404.html
----
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,7 +54,7 @@ permalink: /404.html
               <nav>
                 <ul class="nav masthead-nav">
                   <li><a href="/">Home</a></li>
-                  <li><a href="PokemonGo.html">Pokemon Go</a></li>
+                  <li class="active"><a href="PokemonGo.html">Pokemon Go</a></li>
                   <li><a href="Contact.html">Contact</a></li>
                 </ul>
               </nav>
@@ -65,11 +62,18 @@ permalink: /404.html
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">404</h1>
-            <p class="lead">I couldn't find that page, sorry.</p>
-            <p class="lead">If you were looking for the Pokemon Go resources, they're still here, just click the <a href="PokemonGo.html">Pokemon Go</a> tab.</p>
-            <p class="lead">If you were looking for something else, take a look around, if it's not here, feel free to <a href="Contact.html">contact</a> me.</p>
-            </p>
+            <h1 class="cover-heading">Manmeet Gill</h1>
+            <p class="lead">Here are the Pokemon Go resources I have.</p>
+
+
+			<h2><a href="/PokemonGo/old/pokemongo.app.zip" target="_blank">Extracted IPA</a></h2>
+			<p>The iOS app at launch, extracted (not decompiled)</p>
+      <h2><a href="/PokemonGo/old/com.nianticlabs.pokemongo.zip" target="_blank">Launch APK</a></h2>
+			<p>The APK at launch, decompiled using JadX.</p>
+			<h2><a href="/PokemonGo/old/PokemonGoStrings.html" target="_blank">Launch Pokemon Go Strings</a></h2>
+			<p>A hex dump of the strings in the game at launch, in HTML.</p>
+			<h2><a href="/PokemonGo/old/global-metadata.dat" target="_blank">Launch Raw Metadata</a></h2>
+			<p>Raw version of Old Pokemon Go Strings.</p>
           </div>
 
         </div>
@@ -109,6 +113,30 @@ permalink: /404.html
   "email": "mailto:manmeet.gill@y7mail.com",
   "url": "https://tf2manu994.github.io",
   "alternateName": "tf2manu994"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "MobileApplication",
+  "name": "Pokemon Go",
+  "applicationCategory": "Game",
+  "applicationSubCategory": "Augmented Reality",
+  "installUrl": "https://itunes.apple.com/app/pokemon-go/id1094591345",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo",
+  "operatingSystem": "Android, iOS",
+  "creator": "Niantic. Inc",
+  "url": "http://www.pokemongo.com/",
+  "offers": {
+  	"@type": "Offer",
+    "price": "0",
+	"priceCurrency": "USD"
+	},
+  "aggregateRating": {
+  	"@type": "AggregateRating",
+    "ratingValue": "4",
+    "reviewCount": "700000"
+	}
 }
 </script>
 <!--end of Rich Cards-->
