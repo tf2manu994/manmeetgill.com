@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://tf2manu994.github.io/sitemap.xml
+Sitemap: https://manmeetgill.com/sitemap.xml
