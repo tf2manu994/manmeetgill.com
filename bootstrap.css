@@ -6903,7 +6903,7 @@ body {
   }
   .mastfoot {
     position: fixed;
-    bottom: 0;
+    bottom: 0.7cm;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -6919,17 +6919,9 @@ body {
 
 @media (min-width: 992px) {
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 700px;
   }
 }
 
 /* END COVERCSS*/
-
-
-div.social {
-  float: left;
-  width: 0;
-  word-wrap: break-word;
-} 
