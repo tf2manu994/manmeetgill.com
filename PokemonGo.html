@@ -1,3 +1,7 @@
+---
+redirect_from: "/PokemonGo/PokemonGoStringsFull.html"
+redirect_from: "/PokemonGo/"
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,21 +18,12 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00aba9">
     <meta name="theme-color" content="#00aba9">
     <title>Pokemon Go</title>
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Google Tag Manager -->
+        <!-- Google Tag Manager -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W242XJ"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
@@ -48,67 +43,57 @@
         })(window, document, 'script', 'dataLayer', 'GTM-W242XJ');
     </script>
     <!-- End Google Tag Manager -->
-
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-
-            <div class="cover-container">
-
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h3 class="masthead-brand">Manmeet Gill</h3>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li><a href="/">Home</a></li>
-                                <li class="active"><a href="PokemonGo.html">Pokemon Go</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="inner cover">
-                    <h1 class="cover-heading">Manmeet Gill</h1>
-                    <p class="lead">Here are the Pokemon Go resources I have.</p>
-
-
-                    <h2><a href="/PokemonGo/old/pokemongo.app.zip" target="_blank">Extracted IPA</a></h2>
-                    <p>The iOS app at launch, extracted (not decompiled)</p>
-                    <h2><a href="/PokemonGo/old/com.nianticlabs.pokemongo.zip" target="_blank">Launch APK</a></h2>
-                    <p>The APK at launch, decompiled using JadX.</p>
-                    <h2><a href="/PokemonGo/old/PokemonGoStrings.html" target="_blank">Launch Pokemon Go Strings</a></h2>
-                    <p>A hex dump of the strings in the game at launch, in HTML.</p>
-                    <h2><a href="/PokemonGo/old/global-metadata.dat" target="_blank">Launch Raw Metadata</a></h2>
-                    <p>Raw version of Old Pokemon Go Strings.</p>
-                </div>
-
-
-            </div>
-
-        </div>
-
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">Manmeet Gill</span>
     </div>
-    <div class="mastfoot">
-        <a href="mailto:contact@manmeetgill.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-        <a href="https://github.com/tf2manu994"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        <a href="https://plus.google.com/+ManuGill994"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/tf2manu994"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a href="skype:tf2manu994"><i class="fa fa-skype fa-2x"></i></a>
-        <a href="https://steamcommunity.com/id/tf2manu994"><i class="fa fa-steam fa-2x" aria-hidden="true"></i></a>
-        <link rel="stylesheet" href="font-awesome.css">
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout__title">Manmeet Gill</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/">Home</a>
+      <a class="mdl-navigation__link" href="PokemonGo.html">Pokemon Go</a>
+    </nav>
+  </div>
+      <main class="mdl-layout__content">
+    <!-- Wide card -->
+<div class="mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Pokemon Go Content</h2>
+  </div>
+  <div>
+<a href="PokemonGo/old/pokemongo.app.zip" target="_blank">Extracted IPA</a>
+  <div class="mdl-card__supporting-text">The iOS app at launch, extracted (not decompiled)</div>
+  </div>
+    <div>
+<a href="PokemonGo/old/com.nianticlabs.pokemongo.zip" target="_blank">Launch APK</a>
+  <div class="mdl-card__supporting-text">The APK at launch, decompiled using JadX</div>
+  </div>
+    <div>
+<a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">Launch Pokemon Go Strings</a>
+  <div class="mdl-card__supporting-text">A hex dump of the strings in the game at launch, in HTML</div>
+  </div>
+  <div>
+  <a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">Current Pokemon Go Strings</a>
+  <div class="mdl-card__supporting-text">A hex dump of the strings currently in the game, in HTML</div>
+  </div>
+    <div>
+<a href="PokemonGo/old/global-metadata.dat" target="_blank">Launch Raw Metadata</a>
+  <div class="mdl-card__supporting-text">Raw version of Old Pokemon Go Strings</div>
+  </div>
+</div>
+    <!-- end Wide card -->
+    <div class="footer">
+        <a href="mailto:contact@manmeetgill.com"><img src="assets/envelope-o.svg" alt="Email" class="Email" height="32" width="32"></a>
+        <a href="https://github.com/tf2manu994"><img src="assets/github.svg" alt="GitHub" class="GitHub" height="32" width="32"></a>
+        <a href="https://plus.google.com/+ManuGill994"><img src="assets/google-plus.svg" alt="Google Plus" class="GooglePlus" height="32" width="32"></a>
+        <a href="https://twitter.com/tf2manu994"><img src="assets/twitter.svg" alt="Twitter" class="Twitter" height="32" width="32"></a>
+        <a href="skype:tf2manu994"><img src="assets/skype.svg" alt="Skype" class="Skype" height="32" width="32"></a>
+        <a href="https://steamcommunity.com/id/tf2manu994"><img src="assets/steam.svg" alt="Steam" class="Steam" height="32" width="32"></a>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="bootstrap.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="ie10-viewport-bug-workaround.js"></script>
-
+      </main>
+    </div>
     <!--Rich Cards-->
     <script type="application/ld+json">
         {
