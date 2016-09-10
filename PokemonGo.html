@@ -4,7 +4,6 @@ redirect_from: "/PokemonGo/"
 ---
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +17,7 @@ redirect_from: "/PokemonGo/"
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00aba9">
     <meta name="theme-color" content="#00aba9">
     <title>Pokemon Go</title>
+    <script src="bower_components/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
@@ -43,10 +43,15 @@ redirect_from: "/PokemonGo/"
         })(window, document, 'script', 'dataLayer', 'GTM-W242XJ');
     </script>
     <!-- End Google Tag Manager -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <span class="mdl-layout__title">Manmeet Gill</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <a class="mdl-navigation__link" href="/">Home</a>
+      <a class="mdl-navigation__link" href="PokemonGo.html">Pokemon Go</a>
+      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -56,45 +61,53 @@ redirect_from: "/PokemonGo/"
       <a class="mdl-navigation__link" href="PokemonGo.html">Pokemon Go</a>
     </nav>
   </div>
-      <main class="mdl-layout__content">
-    <!-- Wide card -->
-<div class="mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Pokemon Go Content</h2>
-  </div>
-  <div>
-<a href="PokemonGo/old/pokemongo.app.zip" target="_blank">Extracted IPA</a>
-  <div class="mdl-card__supporting-text">The iOS app at launch, extracted (not decompiled)</div>
-  </div>
-    <div>
-<a href="PokemonGo/old/com.nianticlabs.pokemongo.zip" target="_blank">Launch APK</a>
-  <div class="mdl-card__supporting-text">The APK at launch, decompiled using JadX</div>
-  </div>
-    <div>
-<a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">Launch Pokemon Go Strings</a>
-  <div class="mdl-card__supporting-text">A hex dump of the strings in the game at launch, in HTML</div>
-  </div>
-  <div>
-  <a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">Current Pokemon Go Strings</a>
-  <div class="mdl-card__supporting-text">A hex dump of the strings currently in the game, in HTML</div>
-  </div>
-    <div>
-<a href="PokemonGo/old/global-metadata.dat" target="_blank">Launch Raw Metadata</a>
-  <div class="mdl-card__supporting-text">Raw version of Old Pokemon Go Strings</div>
-  </div>
 </div>
-    <!-- end Wide card -->
-    <div class="footer">
-        <a href="mailto:contact@manmeetgill.com"><img src="assets/envelope-o.svg" alt="Email" class="Email" height="32" width="32"></a>
-        <a href="https://github.com/tf2manu994"><img src="assets/github.svg" alt="GitHub" class="GitHub" height="32" width="32"></a>
-        <a href="https://plus.google.com/+ManuGill994"><img src="assets/google-plus.svg" alt="Google Plus" class="GooglePlus" height="32" width="32"></a>
-        <a href="https://twitter.com/tf2manu994"><img src="assets/twitter.svg" alt="Twitter" class="Twitter" height="32" width="32"></a>
-        <a href="skype:tf2manu994"><img src="assets/skype.svg" alt="Skype" class="Skype" height="32" width="32"></a>
-        <a href="https://steamcommunity.com/id/tf2manu994"><img src="assets/steam.svg" alt="Steam" class="Steam" height="32" width="32"></a>
-    </div>
-      </main>
-    </div>
-    <!--Rich Cards-->
+<main class="mdl-layout__content mdl-grid page-content">
+        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--middle mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Pokemon Go Content</h2>
+            </div>
+            <div>
+                <a href="PokemonGo/old/pokemongo.app.zip" target="_blank">Extracted IPA</a>
+                <div class="mdl-card__supporting-text">
+                    The iOS app at launch, extracted (not decompiled)
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/com.nianticlabs.pokemongo.zip" target="_blank">Launch APK</a>
+                <div class="mdl-card__supporting-text">
+                    The APK at launch, decompiled using JadX
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">Launch Pokemon Go Strings</a>
+                <div class="mdl-card__supporting-text">
+                    A hex dump of the strings in the game at launch, in HTML
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">Current Pokemon Go Strings</a>
+                <div class="mdl-card__supporting-text">
+                    A hex dump of the strings currently in the game, in HTML
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/global-metadata.dat" target="_blank">Launch Raw Metadata</a>
+                <div class="mdl-card__supporting-text">
+                    Raw version of Old Pokemon Go Strings
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <a href="mailto:contact@manmeetgill.com"><img src="assets/envelope-o.svg" alt="Email" class="Email" height="32" width="32"></a>
+                <a href="https://github.com/tf2manu994"><img src="assets/github.svg" alt="GitHub" class="GitHub" height="32" width="32"></a>
+                <a href="https://plus.google.com/+ManuGill994"><img src="assets/google-plus.svg" alt="Google Plus" class="GooglePlus" height="32" width="32"></a>
+                <a href="https://twitter.com/tf2manu994"><img src="assets/twitter.svg" alt="Twitter" class="Twitter" height="32" width="32"></a>
+                <a href="skype:tf2manu994"><img src="assets/skype.svg" alt="Skype" class="Skype" height="32" width="32"></a>
+                <a href="https://steamcommunity.com/id/tf2manu994"><img src="assets/steam.svg" alt="Steam" class="Steam" height="32" width="32"></a>
+        </div>
+</main>
+        <!--Start of Rich Cards-->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
@@ -144,5 +157,4 @@ redirect_from: "/PokemonGo/"
     </script>
     <!--end of Rich Cards-->
 </body>
-
 </html>
