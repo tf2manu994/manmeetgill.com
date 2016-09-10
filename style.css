@@ -29,6 +29,9 @@ body {
   display:block;
   margin:0 auto;
 }
+.pgo_resource_text {
+    border-bottom: 1px solid rgba(0,0,0,.13);
+}
 @media screen and (max-width: 1024px){
   .page-content {
     padding-top: 64px;
