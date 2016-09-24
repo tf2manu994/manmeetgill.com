@@ -16,13 +16,12 @@ body {
 .page-content {
   padding-top: 70px;
 }
-#homeimage {
+.homeimage {
   color: #fff;
   height: 176px;
   background: url('assets/welcome_card.jpg') center / cover;
 }
 .mdl-card {
-  display:flex;
   justify-content:center;
   align-items:center;
   text-align:center;
@@ -30,7 +29,8 @@ body {
   margin:0 auto;
 }
 .pgo_resource_text {
-    border-bottom: 1px solid rgba(0,0,0,.13);
+  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 1px solid rgba(0,0,0,.13);
 }
 @media screen and (max-width: 1024px){
   .page-content {
