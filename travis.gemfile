@@ -1,2 +1,4 @@
-gem 'jekyll'
-gem 'htmlproofer'
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "html-proofer"
