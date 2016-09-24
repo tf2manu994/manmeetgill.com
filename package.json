@@ -1,0 +1,22 @@
+{
+  "name": "manmeetgill.com",
+  "version": "1.0.0",
+  "description": "Manmeet Gill's website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tf2manu994/tf2manu994.github.io.git"
+  },
+  "author": "Manmeet Gill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tf2manu994/tf2manu994.github.io/issues"
+  },
+  "homepage": "https://github.com/tf2manu994/tf2manu994.github.io#readme",
+  "dependencies": {
+    "material-design-lite": ">=1.2.1"
+  }
+}
