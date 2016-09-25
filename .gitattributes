@@ -35,7 +35,7 @@ CNAME text eol=crlf
 *.yml text eol=crlf
 ## Ruby
 *.rb text eol=crlf
-*.gemfile text eol=crlf
+GEMFILE text eol=crlf
 ## Text Editor Configs
 # Global
 .editorconfig text eol=crlf
