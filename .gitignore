@@ -1,4 +1,3 @@
 *.sublime-workspace
 Gemfile.lock
 _site/*
-node_modules/material-design-lite/*/*.html
