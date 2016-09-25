@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "path": "/",
+            "name": "Site"
+        }
+    ],
+    "settings":
+    {
+        "tab_size": 4
+    },
+    "build_systems":
+    [
+        {
+        }
+    ]
+}
