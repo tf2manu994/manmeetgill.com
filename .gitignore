@@ -3,4 +3,3 @@ Gemfile.lock
 _site/*
 node_modules/material-design-lite/*
 !node_modules/material-design-lite/material.*
-!node_modules/material-design-lite/dist/material.deep_purple-indigo.min
