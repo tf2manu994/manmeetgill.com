@@ -1,0 +1,84 @@
+### Sets default
+* text=auto
+
+### Sets text files
+## Git files
+.gitignore text eol=crlf
+.gitattributes text eol=crlf
+## GitHub
+license text eol=crlf
+# GitHub Pages
+CNAME text eol=crlf
+## Hypertext Markup Language
+*.html text eol=crlf
+*.htm text eol=crlf
+## Javascript
+*.js text eol=crlf
+# Typescript
+*.ts text eol=crlf
+# CoffeeScript
+*.coffee text eol=crlf
+## Cascading Style Sheets
+*.css text eol=crlf
+# Sassy CSS
+*.scss text eol=crlf
+*.sass text eol=crlf
+# Less
+*.less text eol=crlf
+## JSON
+*.json text eol=crlf
+## Markdown
+*.md text eol=crlf
+## XML
+*.xml text eol=crlf
+## YAML
+*.yml text eol=crlf
+## Ruby
+*.rb text eol=crlf
+*.gemfile text eol=crlf
+## Text Editor Configs
+# Global
+.editorconfig text eol=crlf
+# Sublime
+*.sublime-project text eol=crlf
+## Continuous Integration
+# CodeClimate
+.csslintrc text eol=crlf
+.eslintignore text eol=crlf
+.eslintrc text eol=crlf
+# Travis
+travis text eol=crlf
+## Dependency bits
+# mdl-lite
+*.template text eol=crlf
+.jshintrc text eol=crlf
+.jscsrc text eol=crlf
+
+
+
+### Sets binaries
+## Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.ico binary
+*.svg binary # Yes, I am well aware that svg is not a binary. For the purposes of git, it is though. This is because merging a svg is damn near impossible.
+## Archives
+## One-Line text files
+*.min.css* binary
+*.min.js* binary
+
+### Sets files that should be diffed as plain text
+*.doc diff=astextplain
+*.DOC diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot diff=astextplain
+*.DOT diff=astextplain
+*.pdf diff=astextplain
+*.PDF diff=astextplain
+*.rtf diff=astextplain
+*.RTF diff=astextplain
