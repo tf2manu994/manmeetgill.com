@@ -43,11 +43,12 @@ CNAME text eol=crlf
 *.sublime-project text eol=crlf
 ## Continuous Integration
 # CodeClimate
-.csslintrc text eol=crlf
-.eslintignore text eol=crlf
-.eslintrc text eol=crlf
+.csslintrc text eol=lf
+.eslintignore text eol=lf
+.eslintrc text eol=lf
 # Travis
-travis text eol=crlf
+travis text eol=lf
+.travis.yml eol lf
 ## Dependency bits
 # mdl-lite
 *.template text eol=crlf
