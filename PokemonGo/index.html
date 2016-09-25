@@ -1,0 +1,84 @@
+---
+redirect_from: "/PokemonGo/PokemonGoStringsFull.html"
+redirect_from: "/PokemonGo.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Manmeet Gill">
+    <meta name="description" content="Manmeet Gill's Pokemon Go Content">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#00aba9">
+    <meta name="theme-color" content="#3f51b5">
+    <title>Pokemon Go</title>
+    <script src="../node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css">
+    {% include style.css %}
+    </style>
+</head>
+
+<body>
+    {% include tag-manager.html %}
+    {% include navigation.html %}
+    <main class="mdl-layout__content mdl-grid page-content">
+        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--middle mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Pokemon Go Content</h2>
+            </div>
+            <div>
+                <a href="PokemonGo/old/pokemongo.app.zip" target="_blank">
+                    <h4>Extracted IPA</h4>
+                </a>
+                <div class="pgo_resource_text">
+                    <h5>The iOS app at launch, extracted (not decompiled)</h5>
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/com.nianticlabs.pokemongo.zip" target="_blank">
+                    <h4>Launch APK</h4>
+                </a>
+                <div class="pgo_resource_text">
+                    <h5>The APK at launch, decompiled using JadX</h5>
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/PokemonGoStrings.html" target="_blank">
+                    <h4>Launch Pokemon Go Strings</h4>
+                </a>
+                <div class="pgo_resource_text">
+                    <h5>A hex dump of the strings in the game at launch, in HTML</h5>
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/PokemonGoStrings.html" target="_blank">
+                    <h4>Current Pokemon Go Strings</h4>
+                </a>
+                <div class="pgo_resource_text">
+                    <h5>A hex dump of the strings currently in the game, in HTML</h5>
+                </div>
+            </div>
+            <div>
+                <a href="PokemonGo/old/global-metadata.dat" target="_blank">
+                    <h4>Launch Raw Metadata</h4>
+                </a>
+                <div class="pgo_resource_text">
+                    <h5>Raw version of the Pokemon Go Strings at launch</h5>
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </main>
+    {% include rich-card-manmeet.html %}
+    {% include rich-card-pokemongo.html %}
+</body>
+
+</html>
