@@ -3,7 +3,7 @@ set -e # halt script on error
 
 bundle exec jekyll build
 bundle exec htmlproofer ./_site/index.html
-bundle exec htmlproofer ./_site/PokemonGo.html
+bundle exec htmlproofer ./_site/PokemonGo/index.html
 bundle exec htmlproofer ./_site/amp/index.html
 bundle exec htmlproofer ./_site/PokemonGo/PokemonGoStrings.html
 bundle exec htmlproofer ./_site/PokemonGo/old/PokemonGoStrings.html
