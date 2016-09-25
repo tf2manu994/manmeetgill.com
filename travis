@@ -2,7 +2,7 @@
 set -e # halt script on error
 
 BUNDLE_GEMFILE=./Gemfile bundle install
-BUNDLE_GEMFILE=./Gemfile bundle exec jekyll serve
+BUNDLE_GEMFILE=./Gemfile bundle exec jekyll serve &
 BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/index.html
 BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/index.html
 BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/amp/index.html
