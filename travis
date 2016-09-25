@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_site/index.html
-bundle exec htmlproofer ./_site/PokemonGo/index.html
-bundle exec htmlproofer ./_site/amp/index.html
-bundle exec htmlproofer ./_site/PokemonGo/PokemonGoStrings.html
-bundle exec htmlproofer ./_site/PokemonGo/old/PokemonGoStrings.html
-bundle exec htmlproofer ./_site/PokemonGo/old/PokemonGoStringsFull.html
+BUNDLE_GEMFILE=./Gemfile bundle install
+BUNDLE_GEMFILE=./Gemfile bundle exec jekyll build
+BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer ./_site/index.html
+BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer ./_site/PokemonGo/index.html
+BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer ./_site/amp/index.html
+BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer ./_site/PokemonGo/PokemonGoStrings.html
+BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer ./_site/PokemonGo/old/PokemonGoStrings.html
+BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer ./_site/PokemonGo/old/PokemonGoStringsFull.html
