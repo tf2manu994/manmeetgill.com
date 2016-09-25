@@ -1,3 +1,4 @@
 gems:
+  - jekyll
   - jekyll-redirect-from
   - jekyll-sitemap
