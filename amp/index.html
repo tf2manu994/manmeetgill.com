@@ -47,47 +47,7 @@ layout: null
         </div>
     </div>
 </body>
-<!--Google Analytics Begin-->
-<amp-analytics type="googleanalytics" id="analytics1">
-    <script type="application/json">
-        {
-            "vars": {
-                "account": "UA-80717654-1"
-            },
-            "triggers": {
-                "trackPageview": {
-                    "on": "visible",
-                    "request": "pageview"
-                }
-            }
-        }
-    </script>
-</amp-analytics>
-<!--Google Analytics End-->
-<!--Start of Rich Cards-->
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "Manmeet Gill",
-        "givenName": "Manmeet",
-        "familyName": "Gill",
-        "gender": "Male",
-        "alternateName": "Manu",
-        "alternateName": "Manu Gill",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "Australia",
-            "addressRegion": "NSW",
-            "addressLocality": "Sydney"
-        },
-        "birthPlace": "India",
-        "nationality": "Australia",
-        "email": "mailto:contact@manmeetgill.com",
-        "url": "https://manmeetgill.com",
-        "alternateName": "tf2manu994"
-    }
-</script>
-<!--end of Rich Cards-->
+{% include amp-analytics %}
+{% include rich-card-manmeet %}
 
 </html>
