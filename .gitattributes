@@ -65,7 +65,8 @@ travis text eol=crlf
 *.tif binary
 *.tiff binary
 *.ico binary
-*.svg binary # Yes, I am well aware that svg is not a binary. For the purposes of git, it is though. This is because merging a svg is damn near impossible.
+# Yes, I am well aware that svg is not a binary. For the purposes of git, it is though. This is because merging a svg is damn near impossible.
+*.svg binary
 ## Archives
 ## One-Line text files
 *.min.css* binary
