@@ -16,24 +16,24 @@ bundle exec jekyll serve &
 # HTML Proofer
 
 echo -e "Testing HTML and links of the frontpage"
-bundle exec htmlproofer http://127.0.0.1:4000/index.html
+bundle exec htmlproofer http://localhost:4000/index.html
 
 echo -e "Testing HTML and links of the Pokemon Go resource disambiguation page"
-bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/index.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/index.html
 
 echo -e "Testing HTML and links of the current Pokemon Go strings page"
-bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/PokemonGoStrings.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/PokemonGoStrings.html
 
 echo -e "Testing HTML and links of the Pokemon Go strings at launch"
-bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStrings.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStrings.html
 
 echo -e "Testing HTML and links of the expanded Pokemon Go strings at launch"
-bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStringsFull.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html
 
 echo -e "Testing HTML and links of the AMP frontpage"
-bundle exec htmlproofer http://127.0.0.1:4000/amp/index.html
+bundle exec htmlproofer http://localhost:4000/amp/index.html
 
 # AMP Validator
 
 echo -e "Verifying AMP formatting of AMP frontpage"
-amphtml-validator http://127.0.0.1:4000/amp/index.html
+amphtml-validator http://localhost:4000/amp/index.html
