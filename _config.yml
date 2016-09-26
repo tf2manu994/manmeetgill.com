@@ -2,3 +2,17 @@ gems:
   - jekyll
   - jekyll-redirect-from
   - jekyll-sitemap
+
+exclude:
+  - ".*"
+  - "*.yml"
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - license
+  - manifest.json
+  - package.json
+  - readme.md
+  - test.ps1
+  - travis
+  - tf2manu994.github.io.sublime-project
