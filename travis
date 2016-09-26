@@ -1,35 +1,62 @@
 #!/usr/bin/env bash
-set -e # halt script on error
 
-echo "\e[96mInstalling Node.js"
-nvm install node
-echo "\e[96mInstalling Node Package Manager"
+# Terminate script if there is an error
+
+set -e
+
+# Node Project Manager
+
+echo -e "\e[96mInstalling Node Package Manager"
 npm install
-echo "\e[96mInstalling AMP Validator"
+
+echo -e "\e[96mInstalling AMP Validator"
 npm install -g amphtml-validator
-echo "\e[96mInstalling Jekyll"
+
+# Ruby Gems
+
+echo -e "\e[96mInstalling Jekyll"
 gem install jekyll
-echo "\e[96mInstalling HTML Proofer"
+
+echo -e "\e[96mInstalling HTML Proofer"
 gem install html-proofer
-echo "\e[96m Installing Jekyll Redirect From gem"
+
+echo -e "\e[96m Installing Jekyll Redirect From gem"
 gem install jekyll-redirect-from
-echo "\e[96m Installing Jekyll Sitemap gem"
+
+echo -e "\e[96m Installing Jekyll Sitemap gem"
 gem install jekyll-sitemap
-echo "\e[96mInstalling required Ruby gems"
-BUNDLE_GEMFILE=./Gemfile bundle install
-echo "\e[96mBuilding jekyll and setting up server"
-BUNDLE_GEMFILE=./Gemfile bundle exec jekyll serve &
-echo "\e[96mTesting HTML and links of the frontpage"
-BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/index.html
-echo "\e[96mTesting HTML and links of the Pokemon Go resource disambiguation page"
-BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/index.html
-echo "\e[96mTesting HTML and links of the current Pokemon Go strings page"
-BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/PokemonGoStrings.html
-echo "\e[96mTesting HTML and links of the Pokemon Go strings at launch"
-BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStrings.html
-echo "\e[96mTesting HTML and links of the expanded Pokemon Go strings at launch"
-BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStringsFull.html
-echo "\e[96mTesting HTML and links of the AMP frontpage"
-BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/amp/index.html
-echo "\e[96mVerifying AMP formatting of AMP frontpage"
+
+# Bundler Gems 
+
+echo -e "\e[96mInstalling required Ruby gems"
+bundle install
+
+# Jekyll compile and start server
+
+echo -e "\e[96mBuilding jekyll and setting up server"
+bundle exec jekyll serve &
+
+# HTML Proofer
+
+echo -e "\e[96mTesting HTML and links of the frontpage"
+bundle exec htmlproofer http://127.0.0.1:4000/index.html
+
+echo -e "\e[96mTesting HTML and links of the Pokemon Go resource disambiguation page"
+bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/index.html
+
+echo -e "\e[96mTesting HTML and links of the current Pokemon Go strings page"
+bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/PokemonGoStrings.html
+
+echo -e "\e[96mTesting HTML and links of the Pokemon Go strings at launch"
+bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStrings.html
+
+echo -e "\e[96mTesting HTML and links of the expanded Pokemon Go strings at launch"
+bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStringsFull.html
+
+echo -e "\e[96mTesting HTML and links of the AMP frontpage"
+bundle exec htmlproofer http://127.0.0.1:4000/amp/index.html
+
+# AMP Validator
+
+echo -e "\e[96mVerifying AMP formatting of AMP frontpage"
 amphtml-validator http://127.0.0.1:4000/amp/index.html
