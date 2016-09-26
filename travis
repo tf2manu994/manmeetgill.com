@@ -9,3 +9,4 @@ BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/amp/index
 BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/PokemonGoStrings.html
 BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStrings.html
 BUNDLE_GEMFILE=./Gemfile bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStringsFull.html
+amphtml-validator http://127.0.0.1:4000/amp/index.html
