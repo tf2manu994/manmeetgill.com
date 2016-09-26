@@ -37,3 +37,7 @@ bundle exec htmlproofer http://localhost:4000/amp/index.html
 
 echo -e "Verifying AMP formatting of AMP frontpage"
 amphtml-validator http://localhost:4000/amp/index.html
+
+# Tree of all generated files
+
+tree -a -s 
