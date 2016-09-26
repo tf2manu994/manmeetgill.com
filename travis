@@ -11,25 +11,6 @@ npm install
 echo -e "Installing AMP Validator"
 npm install -g amphtml-validator
 
-# Ruby Gems
-
-echo -e "Installing Jekyll"
-gem install jekyll
-
-echo -e "Installing HTML Proofer"
-gem install html-proofer
-
-echo -e " Installing Jekyll Redirect From gem"
-gem install jekyll-redirect-from
-
-echo -e " Installing Jekyll Sitemap gem"
-gem install jekyll-sitemap
-
-# Bundler Gems 
-
-echo -e "Installing required Ruby gems"
-bundle install
-
 # Jekyll compile and start server
 
 echo -e "Building jekyll and setting up server"
