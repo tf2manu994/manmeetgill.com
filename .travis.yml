@@ -1,6 +1,6 @@
 language: ruby
 rvm: 
-  - 2.2 # We need this version or higher for html-validator
+  - 2.2.5 # We need this version or higher for html-validator
 
 before_script:
   - chmod +x ./travis # Allows the script to run
