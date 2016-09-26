@@ -5,15 +5,12 @@ set -e
 
 # Node Project Manager
 
-echo -e "Installing Node Package Manager"
-npm install
-
 echo -e "Installing AMP Validator"
 npm install -g amphtml-validator
 
 # Jekyll compile and start server
 
-echo -e "Building jekyll and setting up server"
+echo -e "Building Jekyll and setting up server"
 bundle exec jekyll serve &
 
 # HTML Proofer
