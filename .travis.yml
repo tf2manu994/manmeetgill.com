@@ -1,0 +1,28 @@
+language: ruby
+rvm: 
+  - 2.2.2 # We need this version or higher for html-validator
+
+before_script:
+  - chmod +x ./travis # Allows the script to run
+
+script:
+  - ./travis
+
+gemfile:
+  - ./Gemfile
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - BUNDLE_GEMFILE=./Gemfile
+
+sudo:
+  - false
+
+before_install:
+  - nvm install node
+
+addons:
+  code_climate:
+      repo_token: 
+        secure: "Rh4GK4hq10EZmqaPbnAErRLzIX0C6tEwI+TqahPU0wqTFdQTE5qjTD/9CDuyZOFRp9xwj+uT3BYcDj9STM7U2Qj64aP2uVsEAbfFHVA/olQJyahZ4VUhd/E9owlY36VslnswAM/B5p+QjBRZHw3PTo6i2Ke/EIHe15x2l68niW48BrZlqfNhF6s9+bIdE8WcV/rJ+emslRuTVRWCc0oulOKU7ru1Nf1YVfh96gmr0zpR+mIFk5rme8Qw7ymD3C0Ej45lJkTGHnWojs2aC3W5VjZvT6WQ6ezK9dCwr351ehrAOL9ZlTc+S61OTuOrzxPCcDDp5MXWe+XuquKKPe2dJK5FwjyFk4LwadOKkQdUiTO1pw2LfHM3CrETK48ikH/JQSStkRUsvYxzkKQE7xNQfQKDpF7f2pSGcG/ZQo/NwS09iK3XmK8wH2DzWvQPQeYXeOZp38xowfIsq0rWUfZfg7WdgFCBok97Y8iVamm0F6fA3hrONTLwWrAQDmfcyfyQ9hQstHAsaibQ7rlXWtblXiwo4aCJUZOoRBB+fix8tGFdTbosmO8RXPHWiiVZ8/34iMIssEz97uEsjONmm1HLWTz2Z/SGMUZFlnMB1fZFBB9tgV3C64BuBnhubFTyRaucyaRHe03XUi9z4Upf2GcTnbzrBxRLrWWOTDj/Yd25dRM="

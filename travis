@@ -1,65 +1,61 @@
 #!/usr/bin/env bash
-
-# Set up colours
-CYAN='\033[1;36'
-NC='\033[0m'
 # Terminate script if there is an error
 
 set -e
 
 # Node Project Manager
 
-echo -e "${CYAN}Installing Node Package Manager${NC}\n"
+echo -e "Installing Node Package Manager"
 npm install
 
-echo -e "${CYAN}Installing AMP Validator${NC}\n"
+echo -e "Installing AMP Validator"
 npm install -g amphtml-validator
 
 # Ruby Gems
 
-echo -e "${CYAN}Installing Jekyll${NC}\n"
+echo -e "Installing Jekyll"
 gem install jekyll
 
-echo -e "${CYAN}Installing HTML Proofer${NC}\n"
+echo -e "Installing HTML Proofer"
 gem install html-proofer
 
-echo -e "${CYAN} Installing Jekyll Redirect From gem${NC}\n"
+echo -e " Installing Jekyll Redirect From gem"
 gem install jekyll-redirect-from
 
-echo -e "${CYAN} Installing Jekyll Sitemap gem${NC}\n"
+echo -e " Installing Jekyll Sitemap gem"
 gem install jekyll-sitemap
 
 # Bundler Gems 
 
-echo -e "${CYAN}Installing required Ruby gems${NC}\n"
+echo -e "Installing required Ruby gems"
 bundle install
 
 # Jekyll compile and start server
 
-echo -e "${CYAN}Building jekyll and setting up server${NC}\n"
+echo -e "Building jekyll and setting up server"
 bundle exec jekyll serve &
 
 # HTML Proofer
 
-echo -e "${CYAN}Testing HTML and links of the frontpage${NC}\n"
+echo -e "Testing HTML and links of the frontpage"
 bundle exec htmlproofer http://127.0.0.1:4000/index.html
 
-echo -e "${CYAN}Testing HTML and links of the Pokemon Go resource disambiguation page${NC}\n"
+echo -e "Testing HTML and links of the Pokemon Go resource disambiguation page"
 bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/index.html
 
-echo -e "${CYAN}Testing HTML and links of the current Pokemon Go strings page${NC}\n"
+echo -e "Testing HTML and links of the current Pokemon Go strings page"
 bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/PokemonGoStrings.html
 
-echo -e "${CYAN}Testing HTML and links of the Pokemon Go strings at launch${NC}\n"
+echo -e "Testing HTML and links of the Pokemon Go strings at launch"
 bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStrings.html
 
-echo -e "${CYAN}Testing HTML and links of the expanded Pokemon Go strings at launch${NC}\n"
+echo -e "Testing HTML and links of the expanded Pokemon Go strings at launch"
 bundle exec htmlproofer http://127.0.0.1:4000/PokemonGo/old/PokemonGoStringsFull.html
 
-echo -e "${CYAN}Testing HTML and links of the AMP frontpage${NC}\n"
+echo -e "Testing HTML and links of the AMP frontpage"
 bundle exec htmlproofer http://127.0.0.1:4000/amp/index.html
 
 # AMP Validator
 
-echo -e "${CYAN}Verifying AMP formatting of AMP frontpage${NC}\n"
+echo -e "Verifying AMP formatting of AMP frontpage"
 amphtml-validator http://127.0.0.1:4000/amp/index.html
