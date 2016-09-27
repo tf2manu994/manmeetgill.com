@@ -9,10 +9,9 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - license
+  - "*.md"
   - manifest.json
   - package.json
-  - readme.md
   - test.ps1
   - travis
   - tf2manu994.github.io.sublime-project

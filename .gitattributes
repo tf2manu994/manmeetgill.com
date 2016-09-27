@@ -5,8 +5,6 @@
 ## Git files
 .gitignore text eol=crlf
 .gitattributes text eol=crlf
-## GitHub
-license text eol=crlf
 # GitHub Pages
 CNAME text eol=crlf
 ## Hypertext Markup Language
