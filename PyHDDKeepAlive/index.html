@@ -1,0 +1,48 @@
+﻿---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Manmeet Gill">
+    <meta name="description" content="A python utility to keep your hard drive from spinning down, made by Manmeet Gill.">
+    <title>PyHDDKeepAlive</title>
+    <script async src="/node_modules/material-design-lite/material.js"></script>
+    <link rel="stylesheet" href="/node_modules/material-design-lite/material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    {% include style.html %}
+    {% include header-favicons.html %}
+</head>
+
+<body>
+    {% include tag-manager.html %}
+    {% include navigation.html %}
+    <main class="mdl-layout__content mdl-grid page-content">
+        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--middle mdl-shadow--2dp">
+            <div class="mdl-card__title homeimage">
+                <h2 class="mdl-card__title-text">PyHDDKeepAlive</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                PyHDDKeepAlive is an application made by <a href "/">Manmeet Gill</a> that keeps your hard drive from spinning down.<br>
+                This can be useful for external drives that you leave plugged in, as spinning down decreases their lifespan.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/tf2manu994/PyHDDKeepAlive/releases/download/v0.1/PyHDDKeepAlive.py">
+                    Download
+                </a>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/tf2manu994/PyHDDKeepAlive/">
+                    Source Code
+                </a>
+            </div>
+        </div>
+        {% include footer.html %}
+    </main>
+    {% include rich-card-manmeet.html %}
+</body>
+
+</html>
