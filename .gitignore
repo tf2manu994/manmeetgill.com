@@ -1,5 +1,6 @@
 *.sublime-workspace
 Gemfile.lock
-_site/*
-node_modules/material-design-lite/*
+_site**
+node_modules/**
+.jekyll-metadata
 !node_modules/material-design-lite/material.*
