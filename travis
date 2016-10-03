@@ -17,22 +17,25 @@ sleep 6
 # HTML Proofer
 
 echo -e "Testing HTML and links of the frontpage"
-bundle exec htmlproofer http://localhost:4000/index.html
+bundle exec htmlproofer http://localhost:4000/index.html --as-links
 
 echo -e "Testing HTML and links of the Pokemon Go resource disambiguation page"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/index.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/index.html --as-links
 
 echo -e "Testing HTML and links of the current Pokemon Go strings page"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/PokemonGoStrings.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/PokemonGoStrings.html --as-links
 
 echo -e "Testing HTML and links of the Pokemon Go strings at launch"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStrings.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStrings.html --as-links
 
 echo -e "Testing HTML and links of the expanded Pokemon Go strings at launch"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html
+bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html --as-links
+
+echo -e "Testing HTML and links of the PyHDDKeepAlive homepage"
+bundle exec htmlproofer http://localhost:4000/PyHDDKeepAlive/index.html --as-links
 
 echo -e "Testing HTML and links of the AMP frontpage"
-bundle exec htmlproofer http://localhost:4000/amp/index.html
+bundle exec htmlproofer http://localhost:4000/amp/index.html --as-links
 
 # AMP Validator
 
