@@ -13,6 +13,7 @@ npm install -g amphtml-validator
 echo -e "Building Jekyll and setting up server"
 bundle exec jekyll serve &
 
+sleep 6
 # HTML Proofer
 
 echo -e "Testing HTML and links of the frontpage"
