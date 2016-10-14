@@ -17,12 +17,10 @@
   },
   "homepage": "https://github.com/tf2manu994/tf2manu994.github.io#readme",
   "dependencies": {
-    "material-design-lite": ">=1.2.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.17.0",
-    "gulp": "^3.9.1",
-    "gulp-util": "^3.0.7",
-    "gulp-wait": "0.0.2"
+    "browser-sync": "~2.17.0",
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7"
   }
 }
