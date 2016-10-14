@@ -1,0 +1,13 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true, // Default
+        "**/.svn": true, // Default
+        "**/.hg": true, // Default
+        "**/.DS_Store": true, // Default
+        "**/node_modules": true, // Upstream
+        "**/site": true, // "Compiled" version of the site, I don't care what is there. 
+        ".jekyll-metadata":true, // Jekyll metadata. Binary. Can't edit.
+        "Gemfile.lock": true // Editing it would do nothing anyway,
+    }
+}
