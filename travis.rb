@@ -29,4 +29,4 @@ HTMLProofer.check_links([urlToCheck],
 {
     :check_favicon => true,
     :check_html => true 
-})).run
+}).run
