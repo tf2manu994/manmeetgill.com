@@ -3,39 +3,46 @@
 
 set -e
 
-# Node Project Manager
 
-echo -e "Installing AMP Validator"
-npm install -g amphtml-validator
 
 # Jekyll compile and start server
 
 echo -e "Building Jekyll and setting up server"
 bundle exec jekyll serve &
 
+
+# Node Project Manager
+
+echo -e "Installing AMP Validator"
+npm install -g amphtml-validator
+
+
+
+
+
 sleep 6
 # HTML Proofer
 
 echo -e "Testing HTML and links of the frontpage"
-bundle exec htmlproofer http://localhost:4000/index.html --as-links
+runy travis.rb http://localhost:4000/index.html
 
 echo -e "Testing HTML and links of the Pokemon Go resource disambiguation page"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/index.html --as-links
+ruby travis.rb http://localhost:4000/PokemonGo/index.html
 
 echo -e "Testing HTML and links of the current Pokemon Go strings page"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/PokemonGoStrings.html --as-links
+ruby travis.rb http://localhost:4000/PokemonGo/PokemonGoStrings.html
 
 echo -e "Testing HTML and links of the Pokemon Go strings at launch"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStrings.html --as-links
+ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStrings.html
 
 echo -e "Testing HTML and links of the expanded Pokemon Go strings at launch"
-bundle exec htmlproofer http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html --as-links
+ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html
 
 echo -e "Testing HTML and links of the PyHDDKeepAlive homepage"
-bundle exec htmlproofer http://localhost:4000/PyHDDKeepAlive/index.html --as-links
+ruby travis.rb http://localhost:4000/PyHDDKeepAlive/index.html
 
 echo -e "Testing HTML and links of the AMP frontpage"
-bundle exec htmlproofer http://localhost:4000/amp/index.html --as-links
+ruby travis.rb http://localhost:4000/amp/index.html
 
 # AMP Validator
 
