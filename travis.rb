@@ -16,13 +16,17 @@ urlToCheck = ARGV[0]
 # Validate using W3C
 results = @validator.validate_uri(urlToCheck)
 if results.errors.length > 0
-  results.errors.each do |err|
-    puts err.to_s
-  end
+    results.errors.each do |err|
+      puts err.to_s
+    end
 else
-  puts 'Syntax Valid!'.green
-  puts 'Checking links...'.cyan
+    puts 'Syntax Valid!'.green
+    puts 'Checking links...'.cyan
 end
 
 # Validate using HTMLProofer
-HTMLProofer.check_links([urlToCheck]).run
+HTMLProofer.check_links([urlToCheck], 
+{
+    :check_favicon => true,
+    :check_html => true 
+})).run
