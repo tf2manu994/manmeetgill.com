@@ -14,7 +14,8 @@ if results.errors.length > 0
     puts err.to_s
   end
 else
-  puts 'Valid!'
+  puts 'Syntax Valid!'
+  puts 'Checking links...'
 end
 
-HTMLProofer.check_link(urlToCheck).run
+HTMLProofer.check_links([urlToCheck]).run
