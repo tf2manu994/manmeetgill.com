@@ -6,7 +6,7 @@ set -e
 # Jekyll compile and start server
 
 echo -e "\n\n\e[36mBuilding Jekyll and setting up server\e[0m"
-bundle exec jekyll serve &>/dev/null
+bundle exec jekyll serve &
 
 # Node Project Manager
 
