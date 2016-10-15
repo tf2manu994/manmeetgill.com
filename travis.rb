@@ -20,8 +20,8 @@ if results.errors.length > 0
     puts err.to_s
   end
 else
-  puts 'Syntax Valid!'.cyan
-  puts 'Checking links...'.green
+  puts 'Syntax Valid!'.green
+  puts 'Checking links...'.cyan
 end
 
 # Validate using HTMLProofer
