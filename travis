@@ -17,7 +17,7 @@ sleep 6
 # HTML Proofer
 
 echo -e "Testing HTML and links of the frontpage"
-runy travis.rb http://localhost:4000/index.html
+ruby travis.rb http://localhost:4000/index.html
 
 echo -e "Testing HTML and links of the Pokemon Go resource disambiguation page"
 ruby travis.rb http://localhost:4000/PokemonGo/index.html
