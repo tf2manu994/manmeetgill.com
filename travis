@@ -13,18 +13,6 @@ bundle exec jekyll serve &
 echo -e "\n\n\e[36mInstalling AMP Validator\e[0m"
 npm install -g amphtml-validator
 
-# Sleep for 6 seconds in a way I can see how long it actually needed to.
-echo Sleeping...
-sleep 1
-echo Sleeping...
-sleep 1
-echo Sleeping...
-sleep 1
-echo Sleeping...
-sleep 1
-echo Sleeping...
-sleep 1
-
 # HTML Proofer
 
 echo -e "\n\n\e[36mChcking Syntax of the frontpage\e[0m"
