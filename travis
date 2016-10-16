@@ -24,6 +24,9 @@ ruby travis.rb http://localhost:4000/PokemonGo/index.html
 echo -e "\n\n\e[36mChcking Syntax of the current Pokemon Go strings page\e[0m"
 ruby travis.rb http://localhost:4000/PokemonGo/PokemonGoStrings.html
 
+echo -e "\n\n\e[36mChcking Syntax of the stupid joke\e[0m"
+ruby travis.rb http://localhost:4000/PokemonGo/Updates/index.html
+
 echo -e "\n\n\e[36mChcking Syntax of the Pokemon Go strings at launch\e[0m"
 ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStrings.html
 
