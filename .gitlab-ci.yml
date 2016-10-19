@@ -1,0 +1,13 @@
+image: ruby:latest
+
+pages:
+  script:
+  - gem install jekyll
+  - gem install jekyll-redirect-from
+  - gem install jekyll-sitemap
+  - jekyll build -d public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

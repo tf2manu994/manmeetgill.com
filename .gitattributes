@@ -3,42 +3,42 @@
 
 ### Sets text files
 ## Git files
-.gitignore text eol=crlf
-.gitattributes text eol=crlf
+.gitignore text
+.gitattributes text
 # GitHub Pages
-CNAME text eol=crlf
+CNAME text
 ## Hypertext Markup Language
-*.html text eol=crlf
-*.htm text eol=crlf
+*.html text
+*.htm text
 ## Javascript
-*.js text eol=crlf
+*.js text
 # Typescript
-*.ts text eol=crlf
+*.ts text
 # CoffeeScript
-*.coffee text eol=crlf
+*.coffee text
 ## Cascading Style Sheets
-*.css text eol=crlf
+*.css text
 # Sassy CSS
-*.scss text eol=crlf
-*.sass text eol=crlf
+*.scss text
+*.sass text
 # Less
-*.less text eol=crlf
+*.less text
 ## JSON
-*.json text eol=crlf
+*.json text
 ## Markdown
-*.md text eol=crlf
+*.md text
 ## XML
-*.xml text eol=crlf
+*.xml text
 ## YAML
-*.yml text eol=crlf
+*.yml text
 ## Ruby
-*.rb text eol=crlf
-Gemfile text eol=crlf
+*.rb text
+Gemfile text
 ## Text Editor Configs
 # Global
-.editorconfig text eol=crlf
+.editorconfig text
 # Sublime
-*.sublime-project text eol=crlf
+*.sublime-project text
 ## Continuous Integration
 # CodeClimate
 .csslintrc text eol=lf
@@ -49,9 +49,9 @@ travis text eol=lf
 .travis.yml eol lf
 ## Dependency bits
 # mdl-lite
-*.template text eol=crlf
-.jshintrc text eol=crlf
-.jscsrc text eol=crlf
+*.template text
+.jshintrc text
+.jscsrc text
 
 
 
