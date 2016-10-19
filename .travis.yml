@@ -2,8 +2,6 @@ language: ruby
 rvm: 
 # We need this version or higher for html-validator
   - 2.2.5 
-    gemfile:
-      - travis.Gemfile
 
 before_script:
 # Allows the script to run
@@ -13,7 +11,7 @@ script:
   - ./travis
 
 gemfile:
-  - ./Gemfile
+  - ./travis.Gemfile
 
 env:
   global:
