@@ -1,45 +1,8 @@
-#!/usr/bin/env bash
-# Terminate script if there is an error
+source "https://rubygems.org"
 
-set -e
-
-# Jekyll compile and start server
-
-echo -e "\n\n\e[36mBuilding Jekyll and setting up server\e[0m"
-bundle exec jekyll serve &
-
-# Node Project Manager
-
-echo -e "\n\n\e[36mInstalling AMP Validator\e[0m"
-npm install -g amphtml-validator
-
-# HTML Proofer
-
-echo -e "\n\n\e[36mChcking Syntax of the frontpage\e[0m"
-ruby travis.rb http://localhost:4000/index.html
-
-echo -e "\n\n\e[36mChcking Syntax of the Pokemon Go resource disambiguation page\e[0m"
-ruby travis.rb http://localhost:4000/PokemonGo/index.html
-
-echo -e "\n\n\e[36mChcking Syntax of the current Pokemon Go strings page\e[0m"
-ruby travis.rb http://localhost:4000/PokemonGo/PokemonGoStrings.html
-
-echo -e "\n\n\e[36mChcking Syntax of the stupid joke\e[0m"
-ruby travis.rb http://localhost:4000/PokemonGo/Updates/index.html
-
-echo -e "\n\n\e[36mChcking Syntax of the Pokemon Go strings at launch\e[0m"
-ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStrings.html
-
-echo -e "\n\n\e[36mChcking Syntax of the expanded Pokemon Go strings at launch\e[0m"
-ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html
-
-echo -e "\n\n\e[36mChcking Syntax of the PyHDDKeepAlive homepage\e[0m"
-ruby travis.rb http://localhost:4000/PyHDDKeepAlive/index.html
-
-echo -e "\n\n\e[36mChcking Syntax of the AMP frontpage\e[0m"
-ruby travis.rb http://localhost:4000/amp/index.html
-
-# AMP Validator
-
-echo -e "\n\n\e[36mVerifying AMP formatting of AMP frontpage\e[0m"
-amphtml-validator http://localhost:4000/amp/index.html
+gem 'jekyll'
+gem 'jekyll-redirect-from'
+gem 'html-proofer'
+gem "jekyll-sitemap"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'w3c_validators'
