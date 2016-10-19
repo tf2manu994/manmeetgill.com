@@ -6,6 +6,7 @@ rvm:
 before_script:
 # Allows the script to run
   - chmod +x ./travis 
+  - bundle install
 
 script:
   - ./travis
@@ -16,7 +17,7 @@ gemfile:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - BUNDLE_GEMFILE=./Gemfile
+    - BUNDLE_GEMFILE=./travis.Gemfile
 
 sudo:
   - false
