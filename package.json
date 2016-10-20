@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tf2manu994/tf2manu994.github.io.git"
+    "url": "git+https://github.com/tf2manu994/manmeetgill.com.git"
   },
   "author": "Manmeet Gill",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tf2manu994/tf2manu994.github.io/issues"
+    "url": "https://github.com/tf2manu994/manmeetgill.com/issues"
   },
-  "homepage": "https://github.com/tf2manu994/tf2manu994.github.io#readme",
+  "homepage": "https://github.com/tf2manu994/manmeetgill.com#readme",
   "dependencies": {
   },
   "devDependencies": {
