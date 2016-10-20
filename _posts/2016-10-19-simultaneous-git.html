@@ -36,7 +36,7 @@ permalink: /blog/2016/simultaneous-git
                     First off, choose where you're going to have mirrors. I chose GitLab and BitBucket. Both of these have import functions. First thing you should do is import all your repositories.<br>
                     Next, we're going to set up SSH keys. I did this on Windows, but all of this is the same on any platform.  Probably just follow your service's guide to generating ssh keys, except as you are using multiple, make sure to set the key location to something that's not default. I had mine set to 'id_github', 'id_gitlab' and 'id_atlassian'. Add these keys to the services. (Ignore the bit in the GitHub about adding it to the agent, we do that later.)
                 </p>
-                <p class="mar3">
+                    <p>
                     Next we set up ssh to use these keys properly. In your ssh config (~/.ssh/config), add these lines (Replacing the location of your identity file):
                     {%highlight bash %}
 Host github
@@ -55,7 +55,7 @@ Host bitbucket
 	IdentityFile ~/.ssh/id_atlassian
                     {% endhighlight %}
                 </p>
-                <p class="mar3">
+                    <p>
                     Now for the tedious bit. Adding these as alternate clone loactions. First off, you have to find where all the git repos on your disk are. Luckily, all mine were in a single folder. <br>
                     Then, you open your terminal in their folder. I'm going to assume that you only have one push location at this point, being github. To verify, you can run 'git remote -v', and you should get this:
                     {% highlight bash %}
@@ -63,7 +63,7 @@ origin somethingsomething.git (fetch)
 origin somethingsomething.git (push)
                     {% endhighlight %}
                 </p>
-                <p class="mar3">
+                    <p>
                     If that's what it looks like, great! Go ahead and continue.<br>
                     This is what you'll have to run for each repo:
                     {% highlight bash %}
@@ -76,16 +76,16 @@ git push --set-upstream origin master # Pushes your repository to all 3 and sets
 # Note: SSH might want you to verify that the remotes are correct. You can hit yes for all of them, provided you trust them.
                     {% endhighlight %}
                 </p>
-                <p class="mar3">
+                    <p>
                     That's it! Maybe consider adding some features of the new git push target you just added. I quite like GitLab CI. <br>
                     You can go ahead and test the implementation by adding some code and doing a 'git push -v'.
                 </p>
-                <p class="mar3">
+                    <p>
                     <b>
                         Edit: It has been <a href="https://www.reddit.com/r/programming/comments/587e48/introducing_github_community_guidelines/d8ykfu5">brought to my attention</a> that GitLab lets you do this <a href="https://docs.gitlab.com/ee/workflow/repository_mirroring.html">natively</a>. Oops. 
                     </b>
                 </p>
-                <p class="mar3">
+                    <p>
                     Sources: <br>
                     I used a fair few sources for this, but I was implementing this myself and didn't think of writing a post for it. I'll try look through history and find them.<br>
                     git-scm book<br>
