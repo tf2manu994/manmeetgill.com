@@ -19,8 +19,8 @@
   "dependencies": {
   },
   "devDependencies": {
-    "browser-sync": "~2.17.0",
-    "gulp": "~3.9.1",
-    "gulp-util": "~3.0.7"
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-util": "latest"
   }
 }
