@@ -1,0 +1,41 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Manmeet Gill">
+    <meta name="description" content="Manmeet Gill's blog, generally about technology.">
+    <link rel="canonical" href="https://manmeetgill.com/blog/">
+    <title>Manmeet Gill's Blog</title>
+    <script async src="/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="/mdl/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    {% include style.html %}
+    {% include header-favicons.html %}
+</head>
+
+<body>
+    {% include tag-manager.html %}
+    {% include navigation.html %}
+    <main class="mdl-layout__content mdl-grid page-content">
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--middle mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Blog</h2>
+            </div>
+            {% for post in site.posts %}
+                <div class="mdl-card__supporting-text">
+                    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <p>{{ post.excerpt }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        {% include footer.html %}
+    </main>
+    {% include rich-card-manmeet.html %}
+</body>
+
+</html>
