@@ -1,0 +1,41 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Manmeet Gill">
+    <meta name="description" content="page.description">
+    <link rel="canonical" href="{{ page.permalink | absolute_url }}">
+    <title>page.title</title>
+    <script async src="/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="/mdl/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    {% include style.html %}
+    {% include header-favicons.html %}
+    {% if page.hasCode == true %}
+    {% include syntax.html %}
+    {% endif %}
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    {% include tag-manager.html %}
+    {% include navigation.html %}
+    <main class= "mdl-layout__content page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+            <div class="blog-post mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+    </div>
+    {% include footer.html %}
+    {% include rich-card-manmeet.html %}
+</body>
+
+</html>

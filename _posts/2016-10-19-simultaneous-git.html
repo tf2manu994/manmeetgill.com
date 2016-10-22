@@ -1,46 +1,22 @@
 ---
-layout: null
+layout: post
 permalink: /blog/2016/simultaneous-git
 excerpt: "How to use git to simultaneously push to multiple remotes. Written when the news of the GitHub community guildelines hit."
+description: "How to use git to simultaneously push to multiple remotes."
+hasCode: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="author" content="Manmeet Gill">
-    <meta name="description" content="How to use git to simultaneously push to multiple remotes.">
-    <link rel="canonical" href="https://manmeetgill.com/blog/2016/simultaneous-git">
-    <title>Git - Pushing to Multiple Remotes</title>
-    <script async src="/mdl/material.min.js"></script>
-    <link rel="stylesheet" href="/mdl/material.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    {% include style.html %}
-    {% include header-favicons.html %}
-    {% include syntax.html %}
-</head>
-
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    {% include tag-manager.html %}
-    {% include navigation.html %}
-    <main class= "mdl-layout__content page-content">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-            <div class="blog-post mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-                <h3>How to Configure Git to Push to Multiple Remotes</h3>
-                    <p>
-                        You might have seen the news today that GitHub is planning on implementing community guidelines, and wanted to branch out. I personally don't think anything I make will ever fall into "hateful speech", but you can never be too safe.
-                    </p>
-                    <p>
-                        Anyway, now to the meat. How to do it! <br>
-                        First off, choose where you're going to have mirrors. I chose GitLab and BitBucket. Both of these have import functions. First thing you should do is import all your repositories.<br>
-                        Next, we're going to set up SSH keys. I did this on Windows, but all of this is the same on any platform.  Probably just follow your service's guide to generating ssh keys, except as you are using multiple, make sure to set the key location to something that's not default. I had mine set to 'id_github', 'id_gitlab' and 'id_atlassian'. Add these keys to the services. (Ignore the bit in the GitHub about adding it to the agent, we do that later.)
-                    </p>
-                    <p>
-                        Next we set up ssh to use these keys properly. In your ssh config (~/.ssh/config), add these lines (Replacing the location of your identity file):
-                        {%highlight bash %}
+<h3>How to Configure Git to Push to Multiple Remotes</h3>
+<p>
+    You might have seen the news today that GitHub is planning on implementing community guidelines, and wanted to branch out. I personally don't think anything I make will ever fall into "hateful speech", but you can never be too safe.
+</p>
+<p>
+    Anyway, now to the meat. How to do it! <br>
+    First off, choose where you're going to have mirrors. I chose GitLab and BitBucket. Both of these have import functions. First thing you should do is import all your repositories.<br>
+    Next, we're going to set up SSH keys. I did this on Windows, but all of this is the same on any platform.  Probably just follow your service's guide to generating ssh keys, except as you are using multiple, make sure to set the key location to something that's not default. I     had mine set to 'id_github', 'id_gitlab' and 'id_atlassian'. Add these keys to the services. (Ignore the bit in the GitHub about adding it to the agent, we do that later.)
+</p>
+<p>
+Next we set up ssh to use these keys properly. In your ssh config (~/.ssh/config), add these lines (Replacing the location of your identity file):
+{% highlight plaintext %}
 Host github
 	HostName github.com
 	User git
@@ -55,51 +31,47 @@ Host bitbucket
 	HostName bitbucket.org
 	User git
 	IdentityFile ~/.ssh/id_atlassian
-                        {% endhighlight %}
-                    </p>
-                    <p>
-                        Now for the tedious bit. Adding these as alternate clone loactions. First off, you have to find where all the git repos on your disk are. Luckily, all mine were in a single folder. <br>
-                        Then, you open your terminal in their folder. I'm going to assume that you only have one push location at this point, being github. To verify, you can run 'git remote -v', and you should get this:
-                        {% highlight bash %}
+{% endhighlight %}
+</p>
+<p>
+    Now for the tedious bit. Adding these as alternate clone loactions. First off, you have to find where all the git repos on your disk are. Luckily, all mine were in a single folder. <br>
+    Then, you open your terminal in their folder. I'm going to assume that you only have one push location at this point, being github. To verify, you can run 'git remote -v', and you should get this:
+    {% highlight plaintext %}
 origin somethingsomething.git (fetch)
 origin somethingsomething.git (push)
-                        {% endhighlight %}
-                    </p>
-                    <p>
-                        If that's what it looks like, great! Go ahead and continue.<br>
-                        This is what you'll have to run for each repo:
-                        {% highlight bash %}
-git remote rm origin # Removes current origin
-git remote add origin git@github:user/repo.git # Adds github as pull origin , feel free to replace the 'github' with anything of your choice
-git remote set-url --add --push origin git@github:user/repo.git # Adds github as a push target
-git remote set-url --add --push origin git@gitlab:user/repo.git # Adds gitlab as a push target
-git remote set-url --add --push origin git@bitbucket:user/repo.git # Adds gitlab as a push target
-git push --set-upstream origin master # Pushes your repository to all 3 and sets origin as upstream
-# Note: SSH might want you to verify that the remotes are correct. You can hit yes for all of them, provided you trust them.
-                        {% endhighlight %}
-                    </p>
-                    <p>
+    {% endhighlight %}
+</p>
+<p>
+    If that's what it looks like, great! Go ahead and continue.<br>
+    This is what you'll have to run for each repo:
+{% highlight console %}
+# Removes current origin
+$ git remote rm origin 
+# Adds github as pull origin
+$ git remote add origin git@github:user/repo.git
+# Adds github as a push target
+$ git remote set-url --add --push origin git@github:user/repo.git 
+# Adds gitlab as a push target
+$ git remote set-url --add --push origin git@gitlab:user/repo.git 
+# Adds bitbucket as a push target
+$ git remote set-url --add --push origin git@bitbucket:user/repo.git
+# Pushes your repository to all 3 and sets origin as upstream
+$ git push --set-upstream origin master
+# Note: SSH might want you to verify that the remotes are correct.
+# Note: You can hit yes for all of them, provided you trust them.
+{% endhighlight %}
+</p>
+<p>
                         That's it! Maybe consider adding some features of the new git push target you just added. I quite like GitLab CI. <br>
                         You can go ahead and test the implementation by adding some code and doing a 'git push -v'.
-                    </p>
-                    <p>
-                        <b>
-                            Edit: It has been <a href="https://www.reddit.com/r/programming/comments/587e48/introducing_github_community_guidelines/d8ykfu5">brought to my attention</a> that GitLab lets you do this <a href="https://docs.gitlab.com/ee/workflow/repository_mirroring.html">natively</a>. Oops. 
-                        </b>
-                    </p>
-                    <p>
-                        Sources: <br>
-                        I used a fair few sources for this, but I was implementing this myself and didn't think of writing a post for it. I'll try look through history and find them.<br>
-                        git-scm book<br>
-                        GitHub and GitLab's ssh key guide<br>
-                        I'm sure I missed some, but this is about all I can get.
-                    </p>
-                </div>
-            </div>
-        {% include footer.html %}
-    </main>
-    </div>
-    {% include rich-card-manmeet.html %}
-</body>
-
-</html>
+</p>
+<p>
+    <strong>Edit:</strong> It has been <a href="https://www.reddit.com/r/programming/comments/587e48/introducing_github_community_guidelines/d8ykfu5">brought to my attention</a> that GitLab lets you do this <a href="https://docs.gitlab.com/ee/workflow/repository_mirroring.html">natively</a>. Oops. 
+</p>
+<p>
+    Sources: <br>
+    I used a fair few sources for this, but I was implementing this myself and didn't think of writing a post for it. I'll try look through history and find them.<br>
+    git-scm book<br>
+    GitHub and GitLab's ssh key guide<br>
+    I'm sure I missed some, but this is about all I can get.
+</p>
