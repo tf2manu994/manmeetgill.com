@@ -8,7 +8,7 @@ excerpt: "How to use git to simultaneously push to multiple remotes. Written whe
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="Manmeet Gill">
     <meta name="description" content="How to use git to simultaneously push to multiple remotes.">
     <link rel="canonical" href="https://manmeetgill.com/blog/2016/simultaneous-git">
@@ -22,6 +22,7 @@ excerpt: "How to use git to simultaneously push to multiple remotes. Written whe
 </head>
 
 <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {% include tag-manager.html %}
     {% include navigation.html %}
     <main class= "mdl-layout__content page-content">
@@ -97,6 +98,7 @@ git push --set-upstream origin master # Pushes your repository to all 3 and sets
             </div>
         {% include footer.html %}
     </main>
+    </div>
     {% include rich-card-manmeet.html %}
 </body>
 
