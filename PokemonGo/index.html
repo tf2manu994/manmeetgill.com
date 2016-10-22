@@ -24,62 +24,47 @@ layout: null
     <link rel="stylesheet" href="/mdl/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     {% include style.html %}
+    <style>
+    .seperator-line {
+        border-bottom: 1px solid #DEDEDE;
+        border-bottom: 1px solid rgba(0,0,0,.13);
+    }
+    </style>
     {% include header-favicons.html %}
 </head>
 
 <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {% include tag-manager.html %}
     {% include navigation.html %}
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <main class="mdl-layout__content mdl-grid page-content">
-        <div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--middle mdl-shadow--2dp">
-            <div class="mdl-card__title">
+    <main class= "mdl-layout__content page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+            <div class="blog-post mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
                 <h2 class="mdl-card__title-text">Pokemon Go Content</h2>
-            </div>
-            <div>
-                <a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/pokemongo.app.zip">
-                    <h4>Extracted IPA</h4>
-                </a>
-                <div class="pgo_resource_text">
-                    <h5>The iOS app at launch, extracted (not decompiled)</h5>
-                </div>
-            </div>
-            <div>
-                <a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/com.nianticlabs.pokemongo.zip">
-                    <h4>Launch APK</h4>
-                </a>
-                <div class="pgo_resource_text">
-                    <h5>The APK at launch, decompiled using JadX</h5>
-                </div>
-            </div>
-            <div>
-                <a href="old/PokemonGoStrings.html">
-                    <h4>Launch Pokemon Go Strings</h4>
-                </a>
-                <div class="pgo_resource_text">
-                    <h5>A hex dump of the strings in the game at launch, in HTML</h5>
-                </div>
-            </div>
-            <div>
-                <a href="PokemonGoStrings.html">
-                    <h4>Current Pokemon Go Strings</h4>
-                </a>
-                <div class="pgo_resource_text">
-                    <h5>A hex dump of the strings currently in the game, in HTML</h5>
-                </div>
-            </div>
-            <div>
-                <a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/global-metadata.dat">
-                    <h4>Launch Raw Metadata</h4>
-                </a>
-                <div class="pgo_resource_text">
-                    <h5>Raw version of the Pokemon Go Strings at launch</h5>
-                </div>
+
+                <a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/pokemongo.app.zip"><h4>Extracted IPA</h4></a>
+                <p class="seperator-line">The iOS app at launch, extracted (not decompiled)</p>
+
+                <a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/com.nianticlabs.pokemongo.zip"><h4>Launch APK</h4></a>
+                <p class="seperator-line">The APK at launch, decompiled using JadX</p>
+
+                <a href="old/PokemonGoStrings.html"><h4>Launch Pokemon Go Strings</h4></a>
+                <p class="seperator-line">A hex dump of the strings in the game at launch, in HTML</p>
+
+                <a href="PokemonGoStrings.html"><h4>Current Pokemon Go Strings</h4></a>
+                <p class="seperator-line">A hex dump of the strings currently in the game, in HTML</p>
+
+                <a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/global-metadata.dat"><h4>Launch Raw Metadata</h4></a>
+                <p>Raw version of the Pokemon Go Strings at launch.</p>
+                
+                <a href="Updates/"><h4>Current API Status</h4></a>
+                <p>Wether the current API works or not..</p>
             </div>
         </div>
-        {% include footer.html %}
     </main>
     </div>
+    {% include footer.html %}
     {% include rich-card-manmeet.html %}
     {% include rich-card-pokemongo.html %}
 </body>
