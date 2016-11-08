@@ -11,9 +11,7 @@ layout: null
     <meta name="description" content="page.description">
     <link rel="canonical" href="{{ site.url }}{{ page.permalink}}">
     <title>{{ page.title }}</title>
-    <script async src="/mdl/material.min.js"></script>
-    <link rel="stylesheet" href="/mdl/material.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    {% include material-dependencies.html %}
     {% include style.html %}
     {% include header-favicons.html %}
     {% if page.hasCode == true %}
