@@ -25,9 +25,8 @@ else
 end
 
 # Validate using HTMLProofer
-HTMLProofer.check_directory("./_site",
+HTMLProofer.check_links([urlToCheck], 
 {
     :check_favicon => true,
-    :check_html => true,
-    
+    :check_html => true 
 }).run
