@@ -5,11 +5,12 @@ rvm:
 
 before_script:
 # Allows the script to run
-  - chmod +x ./travis 
+  - chmod +x ./tests 
   - bundle install
 
 script:
-  - ./travis
+  - bundle exec jekyll serve &
+  - ./tests
 
 gemfile:
   - ./travis.Gemfile

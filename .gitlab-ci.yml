@@ -5,9 +5,11 @@ pages:
   - gem install jekyll
   - gem install jekyll-redirect-from
   - gem install jekyll-sitemap
+  - jekyll serve &
   - gem install html-proofer
-  - jekyll build
-  - ruby tests.rb
+  - gem install w3c_validators
+  - chmod +x ./tests 
+  - ./tests
   artifacts:
     paths:
     - _site/
