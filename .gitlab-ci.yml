@@ -6,6 +6,7 @@ pages:
   - gem install jekyll-redirect-from
   - gem install jekyll-sitemap
   - gem install html-proofer
+  - gem install w3c_validators
   - ruby gitlab.rb
   - jekyll build
   artifacts:
