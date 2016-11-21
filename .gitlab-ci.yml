@@ -5,9 +5,11 @@ pages:
   - gem install jekyll
   - gem install jekyll-redirect-from
   - gem install jekyll-sitemap
-  - jekyll build -d public/
+  - gem install html-proofer
+  - ruby gitlab.rb
+  - jekyll build
   artifacts:
     paths:
-    - public
+    - _site/
   only:
   - master
