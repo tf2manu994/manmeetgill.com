@@ -6,8 +6,8 @@ pages:
   - gem install jekyll-redirect-from
   - gem install jekyll-sitemap
   - gem install html-proofer
-  - ruby tests.rb
   - jekyll build
+  - ruby tests.rb
   artifacts:
     paths:
     - _site/
