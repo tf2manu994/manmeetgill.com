@@ -16,7 +16,7 @@ npm install -g amphtml-validator
 # HTML Proofer
 
 echo -e "\n\n\e[36mChcking Syntax\e[0m"
-ruby travis.rb
+ruby test.rb
 
 
 echo -e "\n\n\e[36mVerifying AMP formatting\e[0m"
