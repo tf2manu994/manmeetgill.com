@@ -10,7 +10,9 @@ before_script:
 
 script:
   - bundle exec jekyll serve &
+  - npm install -g amphtml-validator
   - ./tests
+  - amphtml-validator http://localhost:4000/amp/index.html
 
 gemfile:
   - ./travis.Gemfile

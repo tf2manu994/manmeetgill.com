@@ -3,32 +3,36 @@
 
 set -e
 
-echo -e "\n\n\e[36mInstalling AMP Validator\e[0m"
-npm install -g amphtml-validator
+echo -e "\n\n\e[36mSleeping 1...\e[0m"
+sleep 1
+echo -e "\n\n\e[36mSleeping 2...\e[0m"
+sleep 1
+echo -e "\n\n\e[36mSleeping 3...\e[0m"
+sleep 1
 
 echo -e "\n\n\e[36mChcking Syntax of the frontpage\e[0m"
-ruby travis.rb http://localhost:4000/index.html
+ruby tests.rb http://localhost:4000/index.html
 		  
 echo -e "\n\n\e[36mChcking Syntax of the Pokemon Go resource disambiguation page\e[0m"		
-ruby travis.rb http://localhost:4000/PokemonGo/index.html		
+ruby tests.rb http://localhost:4000/PokemonGo/index.html		
 		  
 echo -e "\n\n\e[36mChcking Syntax of the current Pokemon Go strings page\e[0m"
-ruby travis.rb http://localhost:4000/PokemonGo/PokemonGoStrings.html
+ruby tests.rb http://localhost:4000/PokemonGo/PokemonGoStrings.html
 		
 echo -e "\n\n\e[36mChcking Syntax of the stupid joke\e[0m"		
-ruby travis.rb http://localhost:4000/PokemonGo/Updates/index.html		
+ruby tests.rb http://localhost:4000/PokemonGo/Updates/index.html		
 		
 echo -e "\n\n\e[36mChcking Syntax of the Pokemon Go strings at launch\e[0m"		
-ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStrings.html		
+ruby tests.rb http://localhost:4000/PokemonGo/old/PokemonGoStrings.html		
 		
 echo -e "\n\n\e[36mChcking Syntax of the expanded Pokemon Go strings at launch\e[0m"		
-ruby travis.rb http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html		
+ruby tests.rb http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html		
 		
 echo -e "\n\n\e[36mChcking Syntax of the PyHDDKeepAlive homepage\e[0m"		
-ruby travis.rb http://localhost:4000/PyHDDKeepAlive/index.html		
+ruby tests.rb http://localhost:4000/PyHDDKeepAlive/index.html		
 		
 echo -e "\n\n\e[36mChcking Syntax of the AMP frontpage\e[0m"		
-ruby travis.rb http://localhost:4000/amp/index.html		
+ruby tests.rb http://localhost:4000/amp/index.html		
 		
 # AMP Validator		
 		
