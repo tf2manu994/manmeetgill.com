@@ -1,4 +1,4 @@
-﻿const gulp = require('gulp');
+const gulp = require('gulp');
 const child = require('child_process');
 const browserSync = require('browser-sync').create();
 const gutil = require('gulp-util');
