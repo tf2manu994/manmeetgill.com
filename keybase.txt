@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/manmeetgill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://manmeetgill.com
+  * I am manmeetgill (https://keybase.io/manmeetgill) on keybase.
+  * I have a public key with fingerprint E02A 104A 5C49 7192 84E8  FF02 00DF DBB1 215D 8A1F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010186d0a1c6bc5dfcf48463cf704bc09e53a10768d30f2dfce90f65fa134faaf8070a",
+            "fingerprint": "e02a104a5c49719284e8ff0200dfdbb1215d8a1f",
+            "host": "keybase.io",
+            "key_id": "00dfdbb1215d8a1f",
+            "kid": "010186d0a1c6bc5dfcf48463cf704bc09e53a10768d30f2dfce90f65fa134faaf8070a",
+            "uid": "a77836f4157471648bc42a67d7dd3f19",
+            "username": "manmeetgill"
+        },
+        "service": {
+            "hostname": "manmeetgill.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480164579,
+    "expire_in": 157680000,
+    "prev": "ea6a7f6b1ae0c329aef169663dc7c57d390e73d59cdff566e4905526d249fd9e",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJbSFRBGF4rFSUpjV56sDiQDyY2c+5nKYMKiywTe7DL0jbnzMx6cPec
+dfe4aZKUXbQIKbSESH0wwpSgssIIQVORDAytULoQJVk9hIVlL0s2p8uTr83LMPNd
+5vv/+QfTFntSEzYM13buez3yMuFxf0uFZ692cqqa021cxXmruTLyeyNBTKKOv8zE
+nJcDEEBVxgBBQ9YNCVODiqooCwZVgKgbQCOSgCBQZBULgPIMJxqgskQRFESKEFWB
+AhCXw1HTCpBIOGJaDrMlgGcqEUmGqClQ41WRqJQCHgBMsa5DHkpYRZAyYakddRUs
+nI6iJNe02R07+P/EW8j/z7krftshRVEFmYpQUkQFyqKqGyKPZAUrGAsUai4xSiIW
+ChHGDiErRIgTMINB7mgOx4CYaRC3t24xC0m5hh1iDuGI7diGHWRgqeOEo15X7FSF
+XfZhovv/+vh108Ksm0wRI5GoaVucFzKm4ZiuMRRVwBJKipbDkcqwGSF+02VIrFbA
+lvsOibl/gGSkUFmHiABD4DVEKJQ1WRawoRiSggUNEEXAkmZgSiVZJqIGJImXMS9q
+FGuEcysrt2zOK7CYKMAso2bAQk5FhHBHH/b5lngSUj1JiYvcKfOkpiz/N3u7e5Pn
+t1zy/dhY2JrxtP5IAY2vjPXN9X0q/viGdAyQbeNNfddmC+Kj74tm6++dn8HdKfH0
+2k3bJ7u6ZzK7CgNp8z01Wx8c+7m6OcXjm2zfObHp66EXx5su2NfPjofrxjZ/W1/M
+jQ6+y4o9//Chu3Xd2Jln0lqYVOkrvBnMtfIP9oPJb41x587VhpKmuvJOe9mBuZKh
+7KzJQPLtvFf5xV8y4/X399eE2y8/sna0d5y4eXiqZzo978Catl29TxJP32iur+ZO
+4rdXGkZuDS+ljee2NU5Nh5fOZtVpzW13y4eSL44/zJjZfmp062jBQH4sPZhduTFE
+ijKj3/NSkvasCMb0Ey2fV018/AX70k80
+=DTUW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/manmeetgill
+
+==================================================================
