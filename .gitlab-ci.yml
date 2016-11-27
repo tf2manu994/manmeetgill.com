@@ -6,7 +6,7 @@ pages:
   - gem install jekyll-redirect-from
   - gem install jekyll-sitemap
   - jekyll serve -d public/ &
-  - bundle install
+  - bundle install --gemfile=ci.Gemfile
   - chmod +x ./tests 
   - ./tests
   artifacts:

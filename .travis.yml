@@ -15,7 +15,7 @@ script:
   - amphtml-validator http://localhost:4000/amp/index.html
 
 gemfile:
-  - ./travis.Gemfile
+  - ./ci.Gemfile
 
 env:
   global:
