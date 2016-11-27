@@ -1,2 +1,8 @@
 /PokemonGo/old/global-metadata.dat*	/PokemonGo
+# Pokemon Go redirects
+
 /PokemonGo/PokemonGo/old/global-metadata.dat*	/PokemonGo
+/PokemonGo/Updates/*	/PokemonGo
+/PokemonGo/old/pokemongo.app.zip*	/PokemonGo
+/PokemonGo/old/com.nianticlabs.pokemongo.zip*	/PokemonGo
+/PokemonGo/PokemonGoStringsFull.html	/PokemonGo
