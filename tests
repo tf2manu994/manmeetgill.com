@@ -9,7 +9,6 @@ sleep 1
 ruby tests.rb http://localhost:4000/index.html
 ruby tests.rb http://localhost:4000/PokemonGo/index.html
 ruby tests.rb http://localhost:4000/PokemonGo/PokemonGoStrings.html
-ruby tests.rb http://localhost:4000/PokemonGo/Updates/index.html
 ruby tests.rb http://localhost:4000/PokemonGo/old/PokemonGoStrings.html	
 ruby tests.rb http://localhost:4000/PokemonGo/old/PokemonGoStringsFull.html
 ruby tests.rb http://localhost:4000/PyHDDKeepAlive/index.html
