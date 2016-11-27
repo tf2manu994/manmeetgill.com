@@ -66,6 +66,27 @@ $ git push --set-upstream origin master
                         You can go ahead and test the implementation by adding some code and doing a 'git push -v'.
 </p>
 <p>
+    Edit: I have written a short PowerShell function if you want to script the addition of these remotes, simply add in your github and run the function like so:
+{% highlight posh %}
+# This is the declaration of the function, perhaps add it to your $PROFILE if you plan to use it frequently.
+function Setup-Git-Remotes {
+    $githubname = "tf2manu994"
+    $gitlabname = "tf2manu994"
+    $atlassianname = "tf2manu994"
+    $reponame = $args
+    git remote rm origin
+    git remote add origin git@${githubname}/${reponame}.git
+    git remote set-url --add --push origin git@github:${githubname}/${reponame}.git
+    git remote set-url --add --push origin git@gitlab:${gitlabname}/${reponame}.git
+    git remote set-url --add --push origin git@bitbucket:${atlassianname}/${reponame}.git
+}
+# This is an example of how you would invoke it:
+Setup-Git-Remotes dotfiles
+# This would set up the remotes for pushing to yourname/dotfiles. 
+# Configure your username in the top 3 lines of the function.
+{% endhighlight %}
+</p>
+<p>
     <strong>Edit:</strong> It has been <a href="https://www.reddit.com/r/programming/comments/587e48/introducing_github_community_guidelines/d8ykfu5">brought to my attention</a> that GitLab lets you do this <a href="https://docs.gitlab.com/ee/workflow/repository_mirroring.html">natively</a>. Oops. 
 </p>
 <p>
