@@ -6,8 +6,7 @@ pages:
   - gem install jekyll-redirect-from
   - gem install jekyll-sitemap
   - jekyll serve -d public/ &
-  - gem install html-proofer
-  - gem install w3c_validators
+  - bundle install
   - chmod +x ./tests 
   - ./tests
   artifacts:
