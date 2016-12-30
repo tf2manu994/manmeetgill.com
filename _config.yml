@@ -1,6 +1,5 @@
 gems:
   - jekyll
-  - jekyll-redirect-from
   - jekyll-sitemap
 
 url: https://manmeetgill.com
