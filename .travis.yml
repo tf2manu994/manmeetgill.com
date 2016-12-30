@@ -20,7 +20,7 @@ gemfile:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - BUNDLE_GEMFILE=./travis.Gemfile
+    - BUNDLE_GEMFILE=./ci.Gemfile
 
 sudo:
   - false
