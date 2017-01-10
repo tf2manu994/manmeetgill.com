@@ -1,7 +1,5 @@
 ---
-permalink: /404.html
 layout: null
-sitemap: false
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,34 +9,31 @@ sitemap: false
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Manmeet Gill">
     <meta name="description" content="Manmeet Gill, also known as Manu, is a student in Sydney, Australia.">
-    <title>Manmeet Gill</title>
-    {% include material-dependencies.html %}
+    <link rel="amphtml" href="https://manmeetgill.com/amp/">
+    <link rel="canonical" href="https://manmeetgill.com/">
+    <title>404</title>
+    {% include css-dependencies.html %}
     {% include style.html %}
     {% include header-favicons.html %}
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {% include tag-manager.html %}
-    {% include navigation.html %}
-    <main class="mdl-layout__content mdl-grid page-content">
-        <div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--middle mdl-shadow--2dp">
-            <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">404</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                Sorry, I couldn't find the page you wanted.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/">
-                    Home
-                </a>
+    <section class="hero is-fullheight is-primary is-bold">
+        <div class="hero-head">
+            {% include navigation.html %}
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    404
+                </h1>
+                <h2 class="subtitle">
+                    Page not found. It might have moved somewhere. Check the other sections of my website, it may have just moved.
+                </h2>
             </div>
         </div>
-    </main>
-    </div>
+        </section>
     {% include footer.html %}
     {% include rich-card-manmeet.html %}
 </body>
-
-</html>

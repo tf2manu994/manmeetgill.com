@@ -11,12 +11,13 @@
     "url": "git+https://github.com/tf2manu994/manmeetgill.com.git"
   },
   "author": "Manmeet Gill",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tf2manu994/manmeetgill.com/issues"
   },
   "homepage": "https://github.com/tf2manu994/manmeetgill.com#readme",
   "dependencies": {
+//    "bulma": "latest"
   },
   "devDependencies": {
     "browser-sync": "latest",

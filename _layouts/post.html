@@ -11,7 +11,7 @@ layout: null
     <meta name="description" content="page.description">
     <link rel="canonical" href="{{ site.url }}{{ page.permalink}}">
     <title>{{ page.title }}</title>
-    {% include material-dependencies.html %}
+    {% include css-dependencies.html %}
     {% include style.html %}
     {% include header-favicons.html %}
     {% if page.hasCode == true %}
@@ -20,17 +20,19 @@ layout: null
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {% include tag-manager.html %}
+    <div class="container">
     {% include navigation.html %}
-    <main class= "mdl-layout__content page-content">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-            <div class="blog-post mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-                {{ content }}
+    <section class="section">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="title is-3">{{ page.inlineTitle }}</h3>
+                </div>
+                <content>
+                    {{ content }}
+                </content>
             </div>
-        </div>
-    </main>
+    </section>
     </div>
     {% include footer.html %}
     {% include rich-card-manmeet.html %}

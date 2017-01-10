@@ -17,4 +17,4 @@ ratings:
   - "**.css"
   - "**.js"
   - "**.jsx"
-exclude_paths: [./mdl/*]
+exclude_paths: 

@@ -1,8 +1,16 @@
 # Pokemon Go redirects
 
-/PokemonGo/old/global-metadata.dat*	/PokemonGo
-/PokemonGo/PokemonGo/old/global-metadata.dat*	/PokemonGo
-/PokemonGo/Updates/*	/PokemonGo
-/PokemonGo/old/pokemongo.app.zip*	/PokemonGo
-/PokemonGo/old/com.nianticlabs.pokemongo.zip*	/PokemonGo
-/PokemonGo/PokemonGoStringsFull.html	/PokemonGo
+/PokemonGo/old/global-metadata.dat*	/other/PokemonGo/
+/PokemonGo/PokemonGo/old/global-metadata.dat*	/other/PokemonGo/
+/PokemonGo/Updates/*	/other/PokemonGo/
+/PokemonGo/old/pokemongo.app.zip*	/other/PokemonGo/
+/PokemonGo/old/com.nianticlabs.pokemongo.zip*	/other/PokemonGo/
+/PokemonGo/PokemonGoStringsFull.html	/other/PokemonGo/PokemonGoStringsFull.html
+/PokemonGo/PokemonGoStrings.html	/other/PokemonGo/PokemonGoStrings.html
+/PokemonGo/old/PokemonGoStringsFull.html    /other/PokemonGo/PokemonGoStringsFull.html
+/PokemonGo/old/PokemonGoStrings.html    /other/PokemonGo/PokemonGoStrings.html
+/PokemonGo*	/other/PokemonGo/
+
+#PyHddKeepalive
+
+/PyHDDKeepAlive* /projects/pyhddkeepalive

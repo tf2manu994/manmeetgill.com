@@ -1,0 +1,59 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Manmeet Gill">
+    <meta name="description" content="Manmeet Gill's findings related to Pokemon Go.">
+    <link rel="canonical" href="https://manmeetgill.com/other/PokemonGo">
+    <title>Manmeet Gill</title>
+    {% include css-dependencies.html %}
+    {% include style.html %}
+    {% include header-favicons.html %}
+</head>
+
+<body>
+    {% include tag-manager.html %}
+    <div class="container">
+    {% include navigation.html %}
+        <section class="section">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="title is-3"><a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/pokemongo.app.zip">Extracted IPA</a></h3>
+                </div>
+                <p>The iOS app at launch, extracted (not decompiled)</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="title is-3"><a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/com.nianticlabs.pokemongo.zip">Launch APK</a></h3>
+                </div>
+                <p>The APK at launch, decompiled using JadX</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="title is-3"><a href="PokemonGoStrings.html">Launch Pokemon Go Strings</a></h3>
+                </div>
+                <p>A hex dump of the strings in the game at launch, in HTML</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="title is-3"><a href="https://github.com/tf2manu994/manmeetgill.com/releases/download/v0.1/global-metadata.dat">Launch Raw Metadata</a></h3>
+                </div>
+                <p>Raw version of the Pokemon Go Strings at launch.</p>
+            </div>
+        </section>
+    </div>
+    {% include footer.html %}
+    {% include rich-card-manmeet.html %}
+    {% include rich-card-pokemongo.html %}
+</body>

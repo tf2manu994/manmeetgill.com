@@ -8,8 +8,8 @@ layout: null
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Manmeet Gill">
-    <meta name="description" content="Manmeet Gill's blog.">
-    <link rel="canonical" href="https://manmeetgill.com/blog">
+    <meta name="description" content="Manmeet Gill's projects.">
+    <link rel="canonical" href="https://manmeetgill.com/projects">
     <title>Manmeet Gill</title>
     {% include css-dependencies.html %}
     {% include style.html %}
@@ -20,16 +20,16 @@ layout: null
     {% include tag-manager.html %}
     <div class="container">
     {% include navigation.html %}
-    {% for post in site.posts %}
         <section class="section">
             <div class="container">
                 <div class="heading">
-                    <h3 class="title is-3"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <h3 class="title is-3"><a href="pyhddkeepalive">PyHDDKeepAlive</a></h3>
                 </div>
-                <p>{{ post.excerpt }}</p>
+                <p>A program (written in python 3) that will write a small piece of data to a chosen disk every minute or so to prevent it from spinning down.
+                    This has been found to extend the longevity of a hard drive.
+                </p>
             </div>
         </section>
-    {% endfor %}
     </div>
     {% include footer.html %}
     {% include rich-card-manmeet.html %}

@@ -13,38 +13,28 @@ layout: null
     <link rel="amphtml" href="https://manmeetgill.com/amp/">
     <link rel="canonical" href="https://manmeetgill.com/">
     <title>Manmeet Gill</title>
-    {% include material-dependencies.html %}
+    {% include css-dependencies.html %}
     {% include style.html %}
     {% include header-favicons.html %}
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     {% include tag-manager.html %}
-    {% include navigation.html %}
-    <main class="mdl-layout__content mdl-grid page-content">
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--middle mdl-shadow--2dp">
-            <div class="mdl-card__title homeimage">
-                <h2 class="mdl-card__title-text">Manmeet Gill</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <p>I am a 14 year old high school student in Sydney, Australia. Some people refer to me as Manu. </p>
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/PyHDDKeepAlive/">
-                    <p>Go to PyHDDKeepAlive</p>
-                </a>
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/PokemonGo/">
-                    <p>Go to Pokemon Go Content</p>
-                </a>
+    <section class="hero is-fullheight is-primary is-bold">
+        <div class="hero-head">
+            {% include navigation.html %}
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Manmeet Gill
+                </h1>
+                <h2 class="subtitle">
+                    Manmeet Gill is a student in Sydney, Australia.
+                </h2>
             </div>
         </div>
-    </main>
-    </div>
+        </section>
     {% include footer.html %}
     {% include rich-card-manmeet.html %}
 </body>
-
-</html>
