@@ -8,7 +8,6 @@ exclude:
   - ".*"
   - "*.yml"
   - "CNAME"
-  - "ci.Gemfile"
   - "Gemfile.lock"
   - "*.md"
   - "package.json"

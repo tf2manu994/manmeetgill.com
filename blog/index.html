@@ -10,6 +10,7 @@ layout: null
     <meta name="author" content="Manmeet Gill">
     <meta name="description" content="Manmeet Gill's blog.">
     <link rel="canonical" href="https://manmeetgill.com/blog">
+    <link rel="amphtml" href="https://manmeetgill.com/amp/blog">
     <title>Manmeet Gill</title>
     {% include css-dependencies.html %}
     {% include style.html %}
@@ -21,14 +22,18 @@ layout: null
     <div class="container">
     {% include navigation.html %}
     {% for post in site.posts %}
-        <section class="section">
-            <div class="container">
-                <div class="heading">
-                    <h3 class="title is-3"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {% assign mod = forloop.index | modulo: 2 %}
+            {% if mod == 0 %}
+            {% else %}
+            <section class="section">
+                <div class="container">
+                        <div class="heading">
+                            <h3 class="title is-3"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                        </div>
+                    <p>{{ post.excerpt }}</p>
                 </div>
-                <p>{{ post.excerpt }}</p>
-            </div>
-        </section>
+            </section>
+            {% endif %}
     {% endfor %}
     </div>
     {% include footer.html %}

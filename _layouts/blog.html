@@ -8,8 +8,9 @@ layout: null
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="Manmeet Gill">
-    <meta name="description" content="page.description">
-    <link rel="canonical" href="{{ site.url }}{{ page.permalink}}">
+    <meta name="description" content="{{ page.description }}">
+    <link rel="canonical" href="{{ site.url }}/blog/{{ page.linkcanon }}">
+    <link rel="amphtml" href="{{ site.url }}/amp/{{ page.linkcanon }}">
     <title>{{ page.title }}</title>
     {% include css-dependencies.html %}
     {% include style.html %}

@@ -1,26 +1,21 @@
 language: ruby
 rvm: 
-# We need this version or higher for html-validator
   - 2.2.5 
 
 before_script:
 # Allows the script to run
-  - chmod +x ./tests 
+  - chmod +x ./build 
   - bundle install
 
 script:
-  - bundle exec jekyll serve &
-  - npm install -g amphtml-validator
-  - ./tests
-  - amphtml-validator http://localhost:4000/amp/index.html
+  - bundle exec jekyll build
 
 gemfile:
-  - ./ci.Gemfile
+  - ./Gemfile
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - BUNDLE_GEMFILE=./ci.Gemfile
+    - BUNDLE_GEMFILE=./Gemfile
 
 sudo:
   - false
