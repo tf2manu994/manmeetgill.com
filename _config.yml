@@ -18,4 +18,5 @@ exclude:
   - "gulpfile.js"
 
 include:
+  - "_headers"
   - "_redirects"
