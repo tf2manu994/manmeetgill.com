@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tf2manu994/manmeetgill.com.git"
+    "url": "git+https://github.com/haboutnnah/manmeetgill.com.git"
   },
-  "author": "Manmeet Gill",
-  "license": "MIT",
+  "author": "Hannah Ivy",
+  "license": "GPL v3",
   "bugs": {
-    "url": "https://github.com/tf2manu994/manmeetgill.com/issues"
+    "url": "https://github.com/haboutnnah/manmeetgill.com/issues"
   },
-  "homepage": "https://github.com/tf2manu994/manmeetgill.com#readme",
+  "homepage": "https://github.com/haboutnnah/manmeetgill.com#readme",
   "dependencies": {
   },
   "devDependencies": {
