@@ -1,5 +1,5 @@
 {
-    "name": "Manmeet Gill",
+    "name": "Hannah Ivy",
     "icons": [
         {
             "src": "\/android-chrome-192x192.png",
@@ -8,6 +8,6 @@
         }
     ],
     "theme_color": "#00aba9",
-    "start_url": "https:\/\/manmeetgill.com",
+    "start_url": "https:\/\/hannahi.com",
     "display": "standalone"
 }

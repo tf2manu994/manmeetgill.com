@@ -2,7 +2,7 @@ gems:
   - jekyll
   - jekyll-sitemap
 
-url: https://manmeetgill.com
+url: https://hannahi.com
 
 exclude:
   - ".*"

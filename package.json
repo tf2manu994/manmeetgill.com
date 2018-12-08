@@ -1,21 +1,21 @@
 {
-  "name": "manmeetgill.com",
+  "name": "hannahi.com",
   "version": "1.0.0",
-  "description": "Manmeet Gill's website",
+  "description": "Hannah Ivy's website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haboutnnah/manmeetgill.com.git"
+    "url": "git+https://github.com/haboutnnah/hannahi.com.git"
   },
   "author": "Hannah Ivy",
   "license": "GPL v3",
   "bugs": {
-    "url": "https://github.com/haboutnnah/manmeetgill.com/issues"
+    "url": "https://github.com/haboutnnah/hannahi.com/issues"
   },
-  "homepage": "https://github.com/haboutnnah/manmeetgill.com#readme",
+  "homepage": "https://github.com/haboutnnah/hannahi.com#readme",
   "dependencies": {
   },
   "devDependencies": {

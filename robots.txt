@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://manmeetgill.com/sitemap.xml
+Sitemap: https://hannahi.com/sitemap.xml
