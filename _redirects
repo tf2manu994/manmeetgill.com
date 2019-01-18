@@ -3,7 +3,7 @@ https://manmeetgill.com/* https://www.hannahi.com/:splat 301!
 https://hannahi.com/* https://www.hannahi.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://sentry-alison-12270.netlify.com/* https://www.hannahi.com/:splat 301!
+https://hannahi.netlify.com/* https://www.hannahi.com/:splat 301!
 
 # Pokemon Go redirects
 
