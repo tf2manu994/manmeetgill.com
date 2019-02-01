@@ -1,3 +1,6 @@
+# SN
+# / /sn 302
+
 # Redirect domain aliases to primary domain
 https://manmeetgill.com/* https://www.hannahi.com/:splat 301!
 https://hannahi.com/* https://www.hannahi.com/:splat 301!
@@ -18,7 +21,7 @@ https://hannahi.netlify.com/* https://www.hannahi.com/:splat 301!
 /PokemonGo/old/PokemonGoStrings.html    /other/PokemonGo/PokemonGoStrings.html
 /PokemonGo*	/other/PokemonGo/
 
-#PyHddKeepalive
+# PyHddKeepalive
 
 /PyHDDKeepAlive* /projects/pyhddkeepalive
 
