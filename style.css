@@ -31,3 +31,36 @@ footer a {
     flex-grow: 1;
     justify-content: flex-start
 }
+.sn {
+  display: none;
+}
+.bg-0 {
+  background-color: #f3f3f3;
+}
+.bg-1 {
+  background-color: #fff1b0;
+}
+.bg-2 {
+  background-color: #eaffab;
+}
+.bg-3 {
+  background-color: #abffca;
+}
+.bg-4 {
+  background-color: #abffff;
+}
+.bg-5 {
+  background-color: #abc3ff;
+}
+.bg-6 {
+  background-color: #cbafff;
+}
+.bg-7 {
+  background-color: #fa5765;
+}
+.bg-8 {
+  background-color: #d4d4d4;
+}
+.bg-9 {
+  background-color: #ababab;
+}
