@@ -1,5 +1,5 @@
 const now = new Date()
-const day = new Date(2020, 2, 16, 16)
+const day = new Date(2021, 2, 16, 16)
 
 if (now >= day) {
     items = document.getElementsByClassName("sn")
